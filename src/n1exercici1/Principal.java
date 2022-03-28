@@ -85,7 +85,7 @@ public class Principal {
 	public static void main(String[] args) {
 	// Introduce meses desordenados	
     final Month hola = new Month("Febrero", "Enero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-	// muestra los valores
+	// muestra los valores ordenados
     System.out.println(Month.name.get(0));
 	System.out.println(Month.name.get(1));
 	System.out.println(Month.name.get(2));
