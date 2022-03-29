@@ -6,16 +6,16 @@ import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
 class Generadora {
-	private static ArrayList<String> Personajes = new ArrayList<String>();
-	private static HashSet<String> Personajes2 = new HashSet<String>();
-	private static LinkedHashSet<String> Personajes3 = new LinkedHashSet<String>();
-	private static TreeSet<String> Personajes4 = new TreeSet<String>();
+	protected static ArrayList<String> Personajes = new ArrayList<String>();
+	protected static HashSet<String> Personajes2 = new HashSet<String>();
+	protected static LinkedHashSet<String> Personajes3 = new LinkedHashSet<String>();
+	protected static TreeSet<String> Personajes4 = new TreeSet<String>();
 
-	private String Personaje1;
-	private String Personaje2;
-	private static String Pelicula = "Piratas del Caribe: ";
+	protected String Personaje1;
+	protected String Personaje2;
+	protected static String Pelicula = "Piratas del Caribe: ";
 
-	private Generadora(String Personaje1, String Personaje2) {
+	protected Generadora(String Personaje1, String Personaje2) {
 		this.Personaje1 = Personaje1;
 		this.Personaje2 = Personaje2;
 
@@ -72,9 +72,7 @@ class Generadora {
 	}
 
 	public static void main(String[] args) {
-		final Generadora Pelicula1 = new Generadora("Pepito", "Gardfield");
-
-		seguentPersonatge();
+		
 	}
 
 }
