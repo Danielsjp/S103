@@ -6,7 +6,7 @@ import java.util.List;
 
 class Month {
 
-	static ArrayList<String> name = new ArrayList<String>();
+	static ArrayList<String> names = new ArrayList<String>();
 	private String mes1;
 	private String mes2;
 	private String mes3;
@@ -33,52 +33,22 @@ class Month {
 		this.mes9 = mes9;
 		this.mes10 = mes10;
 		this.mes11 = mes11;
-		name.add(mes1);
-		name.add(mes2);
-		name.add(mes3);
-		name.add(mes4);
-		name.add(mes5);
-		name.add(mes6);
-		name.add(mes7);
-		name.add(mes8);
-		name.add(mes9);
-		name.add(mes10);
-		name.add(mes11);
-		// Chequea si en el array existen cada uno de los mismos y los reordena una vez
-		// encontrados
-		if (name.contains("Enero") && name.contains("Febrero") && name.contains("Marzo") && name.contains("Abril")
-				&& name.contains("Junio") && name.contains("Julio") && name.contains("Julio")
-				&& name.contains("Septiembre") && name.contains("Octubre") && name.contains("Noviembre")
-				&& name.contains("Diciembre)")) {
-			name.set(0, "Enero");
-			name.set(1, "Febrero");
-			name.set(2, "Marzo");
-			name.set(3, "Abril");
-			name.set(4, "Mayo");
-			name.set(5, "Junio");
-			name.set(6, "Julio");
-			name.set(7, "Septiembre");
-			name.set(8, "Octubre");
-			name.set(9, "Noviembre");
-			name.set(10, "Diciembre");
-		}
-		// un for que chequea si existen los valores ( otra manera de hacerlo, nose si
-		// mas eficiente)
-		// for(String x : name){
-		// if(x.equals("Enero")){
-		// name.set(0, "1Enero");
-		// name.set(1, "Febrero");
-		// name.set(2, "Marzo");
-		// name.set(3, "Abril");
-		// name.set(4, "Mayo");
-		// name.set(5, "Junio");
-		// name.set(6, "Julio");
-		// name.set(7, "Septiembre");
-		// name.set(8, "Octubre");
-		// name.set(9, "Noviembre");
-		// name.set(10, "Diciembre");
-		// break;
-		//// }
+		names.add(mes1);
+		names.add(mes2);
+		names.add(mes3);
+		names.add(mes4);
+		names.add(mes5);
+		names.add(mes6);
+		names.add(mes7);
+		names.add(mes8);
+		names.add(mes9);
+		names.add(mes10);
+		names.add(mes11);
+	}
+
+	public ArrayList<String> getMes() {
+
+		return names;
 
 	}
 
@@ -90,19 +60,31 @@ public class Principal {
 		// Introduce meses desordenados
 		final Month hola = new Month("Febrero", "Enero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Septiembre",
 				"Octubre", "Noviembre", "Diciembre");
-		// muestra los valores ordenados
-		System.out.println(Month.name.get(0));
-		System.out.println(Month.name.get(1));
-		System.out.println(Month.name.get(2));
-		System.out.println(Month.name.get(3));
-		System.out.println(Month.name.get(4));
-		System.out.println(Month.name.get(5));
-		System.out.println(Month.name.get(6));
-		System.out.println(Month.name.get(7));
-		System.out.println(Month.name.get(8));
-		System.out.println(Month.name.get(9));
-		System.out.println(Month.name.get(10));
-
+		// if (hola.getMes().get(1) !="Enero") {
+		// System.out.println("Ordenar");
+		// }
+		// else {
+		Month.names.set(0, "Enero");
+		Month.names.set(1, "Febrero");
+		Month.names.set(2, "Marzo");
+		Month.names.set(3, "Abril");
+		Month.names.set(4, "Mayo");
+		Month.names.set(5, "Junio");
+		Month.names.set(6, "Julio");
+		Month.names.set(7, "Septiembre");
+		Month.names.set(8, "Octubre");
+		Month.names.set(9, "Noviembre");
+		Month.names.set(10, "Diciembre");
+		System.out.println(Month.names.get(0));
+		System.out.println(Month.names.get(1));
+		System.out.println(Month.names.get(2));
+		System.out.println(Month.names.get(3));
+		System.out.println(Month.names.get(4));
+		System.out.println(Month.names.get(5));
+		System.out.println(Month.names.get(6));
+		System.out.println(Month.names.get(7));
+		System.out.println(Month.names.get(8));
+		System.out.println(Month.names.get(9));
+		System.out.println(Month.names.get(10));
 	}
-
 }

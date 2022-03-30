@@ -36,12 +36,12 @@ class Month {
 		this.mes11 = mes11;
 		name.add(mes1);
 		name.add(mes2);
-		// Elemento duplicado
+		// Elemento duplicado no agregado
 		name.add(mes2);
 		name.add(mes3);
 		name.add(mes4);
 		name.add(mes5);
-		// Elemento duplicado
+		// Elemento duplicado no agregado
 		name.add(mes5);
 		name.add(mes6);
 		name.add(mes7);
